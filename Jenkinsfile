@@ -9,8 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t seifeddinemaalel/real-project-front .'
-        sh 'docker build -t seifeddinemaalel/real-project-back .'
+        sh 'docker build -t seifeddinemaalel/real-project-front ui/'
+        sh 'docker build -t seifeddinemaalel/real-project-back api/'
         sh 'docker build -t seifeddinemaalel/real-project-data .'
       }
     }
