@@ -3,8 +3,8 @@ const logger = require('../logger/api.logger');
 
 const connect = () => {
 
-    const url = "mongodb://localhost:27017";
-    logger.info("process.env.MONGO_CONNECTION_STRING :::" + "mongodb://localhost:27017");
+    const url = "mongodb://172.17.0.3:27017";
+    logger.info("process.env.MONGO_CONNECTION_STRING :::" + "mongodb://172.17.0.3:27017");
 
 
     mongoose.connect(url, {
